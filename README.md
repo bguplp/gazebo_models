@@ -13,7 +13,7 @@ catkin_make
 roslaunch gazebo_models citizens_human.launch
 ```
 
-* Each robot have different namespaces, please check the available topics for velocity command. All of them are ending with cmd_vel (<namespace>/cmd_vel).
+* Each robot have different namespaces, please check the available topics for velocity command. They all end in cmd_vel (<namespace>/cmd_vel).
 
 
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
