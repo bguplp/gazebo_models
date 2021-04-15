@@ -1,3 +1,21 @@
+## Installation and usage
+
+* Clone the repository to your catkin_ws/src and make:
+``` bash
+cd ~/catkin_ws/src
+git clone https://TalFeiner@bitbucket.org/robotic-4dvision/gazebo_models.git
+cd ..
+catkin_make
+```
+
+* Run the launch file:
+```bash
+roslaunch gazebo_models citizens_human.launch
+```
+
+* Each robot have different namespaces, please check the available topics for velocity command. All of them are ending with cmd_vel (<namespace>/cmd_vel).
+
+
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
 When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
