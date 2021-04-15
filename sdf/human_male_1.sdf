@@ -1,0 +1,423 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+	<model name='human_male_1'>
+	<static>false</static>
+		<link name="base_link">
+		<must_be_base_link>1</must_be_base_link>
+		</link>
+    <link name='link'>
+    	<pose frame=''>-0.1 -0.4 0.1 0 -0 1.57</pose>
+        <visual name='visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/eyeball.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+         <ambient>1 1 1 1</ambient>
+          <diffuse>0.9 0.9 0.9 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+        <cast_shadows>1</cast_shadows>
+        <transparency>0</transparency>
+      </visual>
+      <collision name='collision'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/eyeball.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+       
+      </collision>
+      <visual name='visual_link_1'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/eyebrows.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+         <material>
+          <script>
+            <uri>model://human_male_1/materials/scripts</uri>
+            <uri>model://human_male_1/materials/textures</uri>
+            <name>hair_m_1_1</name>
+          </script>
+        </material>
+        <cast_shadows>1</cast_shadows>
+        <transparency>0</transparency>
+      </visual>
+      <collision name='collision_link_1'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/eyebrows.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+       
+      </collision>
+     
+      <visual name='visual_link_2'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/hair.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+       <material>
+          <script>
+            <uri>model://human_male_1/materials/scripts</uri>
+            <uri>model://human_male_1/materials/textures</uri>
+            <name>hair_m_1_1</name>
+          </script>
+        </material>
+        <cast_shadows>1</cast_shadows>
+        <transparency>0</transparency>
+      </visual>
+      <collision name='collision_link_2'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/hair.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+       
+      </collision>
+   
+      <visual name='visual_link_3'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/lenses.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+          <ambient>0.4078    0.2431    0.0471 1</ambient>
+          <diffuse>0.4078    0.2431    0.0471 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+        <cast_shadows>1</cast_shadows>
+        <transparency>0</transparency>
+      </visual>
+      <collision name='collision_link_3'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/lenses.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+       
+      </collision>
+    
+      <visual name='visual_link_4'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/pants.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+          <ambient>0.3529    0.3451    0.3294 1</ambient>
+          <diffuse>0.3529    0.3451    0.3294 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+        <cast_shadows>1</cast_shadows>
+        <transparency>0</transparency>
+      </visual>
+      <collision name='collision_link_4'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/pants.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      
+      </collision>
+    
+      <visual name='visual_link_5'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/pupil.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+           <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+        <cast_shadows>1</cast_shadows>
+        <transparency>0</transparency>
+      </visual>
+      <collision name='collision_link_5'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/pupil.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        
+      </collision>
+     
+      <visual name='visual_link_6'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/shirt.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <ambient>0.8706    0.8471    0.1608 1</ambient>
+          <diffuse>0.8706    0.8471    0.1608 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+        <cast_shadows>1</cast_shadows>
+        <transparency>0</transparency>
+      </visual>
+      <collision name='collision_link_6'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/shirt.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+       
+      </collision>
+       <visual name='visual_link_7'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/shoes.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <ambient>0.2000    0.1451    0.1451 1</ambient>
+          <diffuse>0.2000    0.1451    0.1451 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+        <cast_shadows>1</cast_shadows>
+        <transparency>0</transparency>
+      </visual>
+      <collision name='collision_link_7'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/shoes.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      
+      </collision>
+  
+      <visual name='visual_link_8'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/skin.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+             <material>
+          <script>
+            <uri>model://human_male_1/materials/scripts</uri>
+            <uri>model://human_male_1/materials/textures</uri>
+            <name>skin_m_1</name>
+          </script>
+        </material>
+        <cast_shadows>1</cast_shadows>
+        <transparency>0</transparency>
+      </visual>
+      <collision name='collision_link_8'>
+        <laser_retro>0</laser_retro>
+        <max_contacts>10</max_contacts>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://human_male_1/meshes/skin.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+     
+      </collision>
+    </link>
+    <static>1</static>
+    <allow_auto_disable>1</allow_auto_disable>
+			<pose>0.1 0 0 0 0 0</pose>
+			<link name='chassis'>
+			<inertial>
+			<mass> 20 </mass>
+			</inertial>
+			  <pose>0 0 .1 0 0 0</pose>
+			  <collision name='collision'>
+				<geometry>
+				  <box>
+				    <size>.4 .2 .1</size>
+				  </box>
+				</geometry>
+			  </collision>
+
+			  
+
+			  <collision name='caster_collision'>
+				<pose>-0.15 0 -0.05 0 0 0</pose>
+				<geometry>
+				  <sphere>
+				  <radius>.05</radius>
+				</sphere>
+			  </geometry>
+
+			  <surface>
+				<friction>
+				  <ode>
+				    <mu>0</mu>
+				    <mu2>0</mu2>
+				    <slip1>1.0</slip1>
+				    <slip2>1.0</slip2>
+				  </ode>
+				</friction>
+			  </surface>
+			</collision>
+
+			
+		  </link>
+		  <link name="left_wheel">
+			<pose>0.1 0.13 0.1 0 1.5707 1.5707</pose>
+			<collision name="collision">
+			  <geometry>
+				<cylinder>
+				  <radius>.1</radius>
+				  <length>.05</length>
+				</cylinder>
+			  </geometry>
+			</collision>
+			</link>
+			
+
+		  <link name="right_wheel">
+			<pose>0.1 -0.13 0.1 0 1.5707 1.5707</pose>
+			<collision name="collision">
+			  <geometry>
+				<cylinder>
+				  <radius>.1</radius>
+				  <length>.05</length>
+				</cylinder>
+			  </geometry>
+			</collision>
+			
+		  </link>
+		   <joint type="revolute" name="left_wheel_hinge">
+		    <pose>0 0 -0.03 0 0 0</pose>
+		    <child>left_wheel</child>
+		    <parent>chassis</parent>
+		    <axis>
+		      <xyz>0 0 1</xyz>
+		    </axis>
+		  </joint>
+
+		  <joint type="revolute" name="right_wheel_hinge">
+		    <pose>0 0 0.03 0 0 0</pose>
+		    <child>right_wheel</child>
+		    <parent>chassis</parent>
+		    <axis>
+		      <xyz>0 0 1</xyz>
+		    </axis>
+		  </joint>
+		  
+		   <joint type="fixed" name="link_chassis">
+		    <pose>0 0 0.03 0 0 0</pose>
+		    <child>link</child>
+		    <parent>chassis</parent>
+		    <axis>
+		      <xyz>0 0 1</xyz>
+		    </axis>
+		  </joint>
+		  
+		  <joint type="fixed" name="base_link">
+		    <pose>0 0 0.03 0 0 0</pose>
+		    <child>chassis</child>
+		    <parent>base_link</parent>
+		    <axis>
+		      <xyz>0 0 1</xyz>
+		    </axis>
+		  </joint>
+		  
+		  	<plugin name="differential_drive_controller" 		
+				filename="libgazebo_ros_diff_drive.so">
+				<alwaysOn>true</alwaysOn>
+				<updateRate>10</updateRate>
+				<leftJoint>left_wheel_hinge</leftJoint>
+				<rightJoint>right_wheel_hinge</rightJoint>
+				<wheelSeparation>0.5</wheelSeparation>
+				<wheelDiameter>0.1</wheelDiameter>
+				<commandTopic>cmd_vel</commandTopic>
+				<odometryTopic>odom</odometryTopic>
+				<odometryFrame>odom</odometryFrame>
+				<robotBaseFrame>base_footprint</robotBaseFrame>
+				<publishWheelJointState>false</publishWheelJointState>
+				<robotNamespace>/human_male_1</robotNamespace>
+				<rosDebugLevel>false</rosDebugLevel>
+				<publishWheelTF>false</publishWheelTF>
+				<publishOdomTF>false</publishOdomTF>
+				<wheelAcceleration>0</wheelAcceleration>
+				<wheelTorque>1.41</wheelTorque>
+				<odometrySource>world</odometrySource>
+				<publishTf>false</publishTf>
+			</plugin>
+	</model>
+</sdf>

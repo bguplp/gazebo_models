@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+
+	<arg name="world_name" default="worlds/empty.world"/>
+
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(arg world_name)"/>
+	    <arg name="gui" value="true"/>
+        <arg name="paused" value="false"/>
+	</include>
+
+	<param name="citizen_extras_male_03_description"
+	textfile="$(find gazebo_models)/sdf/citizen_extras_male_03.sdf"/>
+	<param name="citizen_extras_female_02_description"
+	textfile="$(find gazebo_models)/sdf/citizen_extras_female_02.sdf"/>
+	<param name="citizen_extras_female_03_description"
+	textfile="$(find gazebo_models)/sdf/citizen_extras_female_03.sdf"/>
+	<param name="human_male_1_description"
+	textfile="$(find gazebo_models)/sdf/human_male_1.sdf"/>
+
+	<node
+	name="spawn_citizen_extras_male_03"
+	pkg="gazebo_ros"
+	type="spawn_model"
+	args="-sdf -model citizen_extras_male_03 -param citizen_extras_male_03_description -y -1"
+	output="screen"
+	/>
+	<node
+	name="spawn_citizen_extras_female_02"
+	pkg="gazebo_ros"
+	type="spawn_model"
+	args="-sdf -model citizen_extras_female_02 -param citizen_extras_female_02_description"
+	output="screen"
+	/>
+	<node
+	name="spawn_citizen_extras_female_03"
+	pkg="gazebo_ros"
+	type="spawn_model"
+	args="-sdf -model citizen_extras_female_03 -param citizen_extras_female_03_description -y 1"
+	output="screen"
+	/>
+	<node
+	name="spawn_human_male_1"
+	pkg="gazebo_ros"
+	type="spawn_model"
+	args="-sdf -model human_male_1 -param human_male_1_description -y -2"
+	output="screen"
+	/>
+	
+	
+	
+    
+</launch>
