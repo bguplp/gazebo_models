@@ -146,7 +146,7 @@
 				<odometryFrame>odom</odometryFrame>
 				<robotBaseFrame>base_footprint</robotBaseFrame>
 				<publishWheelJointState>false</publishWheelJointState>
-				<robotNamespace>/citizen_extras_female_03</robotNamespace>
+				<robotNamespace></robotNamespace>
 				<rosDebugLevel>false</rosDebugLevel>
 				<publishWheelTF>false</publishWheelTF>
 				<publishOdomTF>false</publishOdomTF>
