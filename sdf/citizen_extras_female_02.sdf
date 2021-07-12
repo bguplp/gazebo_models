@@ -154,7 +154,7 @@
 				<wheelTorque>1.41</wheelTorque>
 				<odometrySource>world</odometrySource>
 				<publishTf>false</publishTf>
-                <legacyMode>true</legacyMode>
+                <legacyMode>false</legacyMode>
 			</plugin>
 	</model>
 </sdf>
