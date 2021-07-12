@@ -3,7 +3,7 @@
 * Clone the repository to your catkin_ws/src and make:
 ``` bash
 cd ~/catkin_ws/src
-git clone https://TalFeiner@bitbucket.org/robotic-4dvision/gazebo_models.git
+git clone https://github.com/TalFeiner/gazebo_models.git
 cd ..
 catkin_make
 ```
